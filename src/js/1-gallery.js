@@ -69,7 +69,6 @@ const images = [
 const gallery = document.querySelector('.gallery');
 
 gallery.insertAdjacentHTML('beforeend', createGallery(images));
-gallery.addEventListener('click', handleGallery);
 
 function createGallery(arr) {
   return arr
@@ -93,9 +92,6 @@ function createGallery(arr) {
 
 const galleryImages = document.querySelectorAll('.gallery-image');
 
-function handleGallery(event) {
-  event.preventDefault();
-}
 const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   captions: true,
