@@ -102,4 +102,4 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
 });
 lightbox.refresh();
-console.log(lightbox);
+// console.log(lightbox);
